@@ -1,0 +1,391 @@
+@import "./variables";
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: $White;
+    
+}
+
+// Orange Image
+.header {
+    height: 540px;
+    background-image: url(/dist/images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    .nav {
+    padding: 30px 20px 75px;
+    display: flex;
+    flex-direction: column;
+    }
+}
+.first_part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    position: relative;
+    // Hamburger
+    #btn {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        
+    }
+}
+    
+.drop_down {
+    display: none;
+}
+    
+.drop_down.open{
+    position:absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    right: 0px;
+    top: 40px;
+   
+    .triangle {
+        width: 0; 
+        height: 0; 
+        border-top: 13px solid transparent;
+        border-left: 13px solid transparent ;
+        border-bottom: 13px solid $White; 
+        border-right:13px solid $White; 
+        align-self: flex-end;
+    }
+    .menu {
+        height: auto;
+        background-color: $White;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 40px 0;
+        border-radius: 10px 0 10px 10px;
+            a {
+                font-family: $FontFamB;
+                font-weight: $FontWegihtB;
+                text-align: center;
+                color: $DarkGrayishBlue;
+                font-size: 1.2em;
+                text-decoration: none;
+                width: 140px;
+                height: 55px;
+                
+
+            }
+            #contact {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+                background-color: $Yellow;
+                border-radius: 30px;
+                text-align: center;
+                font-family: $FontFamF;
+                font-weight: $FontWegihtF1;
+                font-size: 1em;
+            }
+    }    
+}
+
+.drop_down__desk {
+    display: none;
+}
+
+.second_part {
+    display: flex;
+    flex-direction: column;
+    .title {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+    align-self: center;
+            // "We are creatives"
+        h1 { 
+            color: white;
+            font-size: 2.5em;
+            line-height: 1em;
+            font-family: $FontFamF;
+            font-weight: $FontWegihtF2;
+            letter-spacing: .2em;
+            text-align: center;
+            line-height: 1.25em;
+        }
+    }
+    // Arrow Down
+    .arrow {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// EGG
+.egg {
+    order: 2;
+    height: 310px;
+    background-image: url(/dist/images/mobile/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+// Article (Photography)
+
+.article {
+    height: 440px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 0 25px;
+        h2 {
+            font-family: $FontFamF;
+            font-weight: $FontWegihtF1;
+            font-size: 2em;
+            margin: 70px 0 30px;
+        }
+
+        p {
+            font-family: $FontFamB;
+            font-weight: $FontWegihtB;
+            font-size: 1.155em;
+            line-height: 1.5em;
+            color: $DarkGrayishBlue;
+            margin-bottom: auto;
+            
+        }
+        // Try Padding to Adjust Box Shadow
+        a {
+            color: black;
+            font-family: $FontFamF;
+            font-weight: $FontWegihtF1;
+            text-align:end;
+            margin-top: auto;
+            margin-bottom: 60px;
+            text-decoration: none;
+            border-radius: 10px;
+            
+
+        }
+}
+
+#num1 {
+    order: 1;
+    a{
+        box-shadow: 0 5px 5px $Yellow;
+    }
+}
+
+#num2 {
+    order: 4;
+    a{
+        box-shadow: 0 5px 5px $SoftRed;
+    }
+}
+
+// Pink Drink
+.drink{
+    order: 3;
+    height: 310px;
+    background-image: url(/dist/images/mobile/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+// Graphic Design
+.pic_article {
+    height: 600px;
+    display: flex;
+    .section {
+        align-self: flex-end;
+        text-align: center;
+        padding: 0 22px;
+            h2{
+                font-family: $FontFamF;
+                font-weight: $FontWegihtF1;
+                font-size: 2em;
+                margin-bottom: 30px;
+            }
+            p {
+                font-family: $FontFamB;
+                font-weight: $FontWegihtB;
+                font-size: 1em;
+                line-height: 1.5em;
+                margin-bottom: 60px;
+            }
+    }
+}
+
+#n1 {
+    order: 5;
+    background-image: url(/dist/images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+        h2 , p{
+            color: $DarkDesaturatedCyan;
+        }
+
+}
+
+#n2 {
+    order: 6;
+    background-image: url(/dist/images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+        h2 , p{
+           color:  $DarkBlue;
+        }
+}
+
+
+// Reviews
+.reviews{
+    height: auto;
+    background-color: white;
+    .desc {
+        text-align: center;
+        font-family: $FontFamF;
+        font-weight: $FontWegihtF2;
+        color: $GrayishBlue;
+        font-size: .75em;
+        letter-spacing: .5em;
+        padding: 65px 0;
+    }
+    .rev{
+        text-align: center;
+        margin-bottom: 60px;
+        padding: 0 25px;
+        p {
+            font-family: $FontFamB;
+            font-weight: $FontWegihtB;
+            font-size: 1.1em;
+            line-height: 1.5em;
+            color: $VeryDarkGrayishBlue;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-family: $FontFamF;
+            font-weight: $FontWegihtF2;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        h4 {
+            font-family: $FontFamB;
+            font-weight: $FontWegihtB;
+            font-size: 1em;
+            line-height: 1.5em;
+            color: $GrayishBlue;
+            
+        }
+        .pfp{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+            img {
+                border-radius: 100%;
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }
+}
+
+// Gallery 
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+        .img {
+            width: 50%;
+            height: 190px;
+        }
+
+        #number1 {
+            background-image: url(/dist/images/mobile/image-gallery-milkbottles.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center bottom;
+        }
+
+        #number2 {
+            background-image: url(/dist/images/mobile/image-gallery-orange.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center bottom;
+        }
+
+        #number3 {
+            background-image: url(/dist/images/mobile/image-gallery-cone.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center bottom;
+        }
+
+        #number4 {
+            background-image: url(/dist/images/mobile/image-gallery-sugar-cubes.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center bottom;
+        }
+}
+
+
+// Info 
+.info  {
+    background-color: $DarkModerateCyan;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo2 {
+        margin: 55px 0 40px;
+        img {
+            width: 190px;
+            height: 35px;
+        }
+    }
+    .links{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 80px;
+        a {
+            font-family: $FontFamB;
+            font-weight: $FontWegihtB;
+            font-size: 1.15em;
+            color: $DarkDesaturatedCyan;
+            text-decoration: none;
+        }
+    }
+
+    .social {
+        width: 100%;
+        padding: 0 100px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+@import "./media";
